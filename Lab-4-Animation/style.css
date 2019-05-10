@@ -10,16 +10,16 @@
 }
 .h1-animation{
 
-
-	opacity: 0.4;
+	letter-spacing: 6px;
+	opacity: 0.2;
 	-webkit-animation: letter-animation 25s ease-out forwards infinite;
 
 }
 @-webkit-keyframes letter-animation {
 
 	0%{
-    	letter-spacing: 4px;
-    	opacity: 0.4;
+    	letter-spacing: 6px;
+    	opacity: 0.2;
 	  }
 
 	15%{
@@ -119,8 +119,12 @@ a {
 	0% {
 		-webkit-transform:translateY(0%);
 	}
-	100% {
+	50%{
 		-webkit-transform:translateY(-250px);
+
+	}
+	100% {
+		-webkit-transform:translateY(0px);
 	}
 
 }
@@ -128,13 +132,10 @@ a {
 .img-wrapper:hover {
 	animation-play-state: running;
 
-
 }
 
-
-
 .img-wrapper{
-	-webkit-animation: seehiden 5s ease-out forwards infinite;
+	-webkit-animation: seehiden 15s ease-out forwards infinite;
 	animation-play-state: paused;
-
+	/* animation-direction: alternate; /* THIS IS BACKWARDS ANIMATION METHOD */
 }
