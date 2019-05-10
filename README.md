@@ -1,2 +1,2 @@
-# HTML-CSS--CICCC
+# HTML-CSS-CICCC
 Study Task's
